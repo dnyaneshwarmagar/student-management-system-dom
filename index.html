@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="./style.css" />
+    <title>Student Management System</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading_bar"><h2>Student Portal</h2></div>
+      <div id="search_bar" class="height_class margin_class">
+        <div id="input_div"><input type="text" /></div>
+        <div id="button_div"><button id="search_btn">Search</button></div>
+      </div>
+      <div id="sort_bar" class="height_class margin_class">
+        <div><button id="sortAToZBtn">Sort A<span>&#8594;</span>Z</button></div>
+        <div><button id="sortZToABtn">Sort Z<span>&#8594;</span>A</button></div>
+        <div><button id="sortByMarkBtn">Sort By Marks</button></div>
+        <div><button id="sortByPassingBtn">Sort By Passing</button></div>
+        <div><button id="sortByClassBtn">Sort By Class</button></div>
+        <div><button id="sortByGenderBtn">Sort By Gender</button></div>
+      </div>
+      <div class="margin_class">
+        <table id="table1" border="1"></table>
+
+        <table id="table2" border="1"></table>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>
