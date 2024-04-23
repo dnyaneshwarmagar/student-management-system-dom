@@ -73,7 +73,7 @@ mapDataToTable(dataArray, "table1")
 function searchInTable() {
     let searchValue = document.querySelector("input").value;
 
-    let filteredArray = dataArray.filter((element) => element.first_name.includes(searchValue) || element.last_name.includes(searchValue) || element.email.includes(searchValue));
+    let filteredArray = dataArray.filter((element) => element.first_name.toLowerCase().includes(searchValue.toLowerCase()) || element.last_name.toLowerCase().includes(searchValue.toLowerCase()) || element.email.toLowerCase().includes(searchValue.toLowerCase()));
 
     mapDataToTable(filteredArray, "table1");
     clearTable2()
