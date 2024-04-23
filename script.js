@@ -33,7 +33,7 @@ function mapDataToTable(arr, tableId) {
                 <col>
                 <col>
                 <col>
-                <col class="wider_col">
+                <col class="wider_col font_cl">
             </colgroup>
           <tr class="height_class">
             <th>ID</th>
@@ -61,7 +61,7 @@ function mapDataToTable(arr, tableId) {
         <td>${element.class}</td>
         <td>${element.marks}</td>
         <td>${element.passing ? "Passing" : "Failed"}</td>
-        <td>${element.email}</td>
+        <td class="font_cl">${element.email}</td>
         `;
 
         table.append(row)

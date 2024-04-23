@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   text-align: left;
+  font-size: 24px;
 }
 body {
   background-color: #cdcdcd;
@@ -18,11 +19,14 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+.height_class1 {
+  height: 60px;
+}
 .height_class {
-  height: 50px;
+  height: 60px;
 }
 .margin_class {
-  margin: 0px 30px;
+  padding: 0px 30px;
 }
 #heading_bar {
   background-color: black;
@@ -40,11 +44,18 @@ body {
 #input_div {
   width: 84%;
   height: 100%;
+  display: flex;
 }
 #input_div > input {
   width: 100%;
   height: 100%;
-  padding:10px
+  padding:10px;
+  background-color: #D9D9D9;
+  border: 1px solid #000000;
+  padding: 5px 20px;
+}
+::placeholder{
+  color: black;
 }
 #button_div {
   width: 15%;
@@ -53,6 +64,8 @@ body {
 #button_div > button {
   width: 100%;
   height: 100%;
+  font-size: inherit;
+
 }
 #sort_bar {
   display: flex;
@@ -73,6 +86,10 @@ button {
   font-size: 18px;
   text-align: center;
 }
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
 table {
   border-collapse: collapse;
   width: 100%;
@@ -81,13 +98,13 @@ table {
 table,
 th ,tr,td{
   border: 2px solid black;
-  padding-left: 15px;
+  padding: 15px;
 }
 .wider_col {
   width: 25%;
 }
 td {
-  padding: 15px;
+  
 }
 .name_td {
   display: flex;
@@ -109,4 +126,59 @@ td {
 .img_span > img {
   height: 24px;
   width: 24px;
+}
+.font_cl{
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  *{
+    font-size: 22px;
+  }
+  .font_cl{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  *{
+    font-size: 18px;
+  }
+  .font_cl{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  *{
+    font-size: 16px;
+  }
+  .font_cl{
+    font-size: 12px;
+  }
+  .height_class1 {
+    height: 40px;
+  }
+  .height_class {
+    height: 80px;
+  }
+  #sort_bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5rem
+  }
+  #sort_bar > div {
+    width: 100%;
+    height: 100%;
+  }
+  #sort_bar button {
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+  }
+}
+@media screen and (max-width: 480px) {
+  *{
+    font-size: 12px;
+  }
+  .font_cl{
+    font-size: 10px;
+  }
 }
